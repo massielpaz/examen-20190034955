@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Karen Massiel Paz Andradiz">
+    <title>📷 Galeria - Mi album de fotos</title>
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <meta name="theme-color" content="#563d7c">
+
+    <link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white"><i class="fas fa-info"></i> Sobre esta pagina</h4>
+                        <p class="text-muted">
+                            Esta es toda mi Coleccion de fotos de los mejores aviones de guerra que poseo 👵
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white"><i class="fas fa-compass"></i> -> Navegar</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="galeria-flexbox.html" class="text-white">
+                                    <i class="fas fa-camera"></i> Galeria
+                                </a>
+                            </li>
+                            <li>
+                                <a href="galeria-carrusel.html" class="text-white">
+                                    <i class="fas fa-image"></i> Carrusel
+                                </a>
+                            </li>
+                            <li>
+                                <a href="galeria-card.html" class="text-white">
+                                    <i class="fas fa-address-card"></i> Cards
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark">
+            <div class="container d-flex justify-content-between">
+                <a href="inicio.html" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
+                        viewBox="0 0 24 24" focusable="false">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                        <circle cx="12" cy="13" r="4" />
+                    </svg>
+                    <strong>Mi album de fotos ✈</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-chevron-circle-down"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .row {
+            display: flex;
+            padding: 5px;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 25%;
+            padding: 5px;
+        }
+
+        .column img {
+            margin-top: 5px;
+        }
+
+        @media (max-width: 800px) {
+            .column {
+                flex: 50%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+            }
+        }
+    </style>
+
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1>¡Estas son mis grandes fotos! ✨</h1>
+                <p class="lead text-muted">
+                    Un avión de caza (también llamado avión de combate), o simplemente caza, es una aeronave militar
+                    diseñada fundamentalmente para la guerra aérea con otras aeronaves, en oposición a los bombarderos,
+                    que están diseñados principalmente para atacar objetivos terrestres mediante el lanzamiento de
+                    bombas. Los cazas son pequeños, veloces y de gran maniobrabilidad. Muchos cazas poseen capacidades
+                    secundarias de ataque a tierra, y algunos son de doble propósito para actuar como cazabombarderos,
+                    término también usado para nombrar a los aviones de ataque a tierra con capacidades de caza.
+                </p>
+            </div>
+        </section>
+        <div class="row">
+            <div class="column">
+                <img src="imagenes/img_1.jpg" alt="imagen 1">
+                <img src="imagenes/img_2.jpg" alt="imagen 2">
+                <img src="imagenes/img_3.jpg" alt="imagen 3">
+            </div>
+
+            <div class="column">
+                <img src="imagenes/img_4.jpg" alt="imagen 4">
+                <img src="imagenes/img_5.jpg" alt="imagen 5">
+                <img src="imagenes/img_6.png" alt="imagen 6">
+            </div>
+
+            <div class="column">
+                <img src="imagenes/img_7.jpg" alt="imagen 4">
+                <img src="imagenes/img_8.jpg" alt="imagen 5">
+                <img src="imagenes/img_9.jpg" alt="imagen 6">
+            </div>
+
+            <div class="column">
+                <img src="imagenes/img_10.jpg" alt="imagen 4">
+                <img src="imagenes/img_11.jpg" alt="imagen 5">
+                <img src="imagenes/img_12.jpg" alt="imagen 6">
+            </div>
+
+            <div class="column">
+                <img src="imagenes/img_13.jpg" alt="imagen 4">
+                <img src="imagenes/img_14.jpg" alt="imagen 5">
+                <img src="imagenes/img_15.jpg" alt="imagen 6">
+            </div>
+
+            <div class="column">
+                <img src="imagenes/img_16.jpg" alt="imagen 4">
+                <img src="imagenes/img_17.jpg" alt="imagen 5">
+                <img src="imagenes/img_18.jpg" alt="imagen 6">
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Ir arriba ↑</a>
+            </p>
+            <p>
+                Los cazas son el principal medio con el que las fuerzas armadas consiguen la superioridad aérea sobre
+                sus oponentes en batalla. Por lo menos desde la Segunda Guerra Mundial, lograr y mantener la
+                superioridad aérea ha sido un componente clave a la hora de conseguir la victoria en la guerra,
+                particularmente en una guerra convencional entre ejércitos regulares (no así en una guerra de
+                guerrillas).
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="jquery/jquery.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

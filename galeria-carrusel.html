@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Karen Massiel Paz Andradiz">
+    <title>🎪 Carrusel - Mi album de fotos</title>
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <meta name="theme-color" content="#563d7c">
+
+    <link href="estilo.css" rel="stylesheet">
+    <style>
+        .carousel {
+            margin-bottom: 4rem;
+        }
+
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+
+        .carousel-item {
+            height: 50rem;
+        }
+
+        .carousel-item>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 50rem;
+        }
+
+        @media (min-width: 40em) {
+            .carousel-caption p {
+                margin-bottom: 1.25rem;
+                font-size: 1.25rem;
+                line-height: 1.4;
+            }
+
+            .featurette-heading {
+                font-size: 50px;
+            }
+        }
+
+        @media (min-width: 62em) {
+            .featurette-heading {
+                margin-top: 7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white"><i class="fas fa-info"></i> Sobre esta pagina</h4>
+                        <p class="text-muted">
+                            Esta pagina muestra las imagenes en forma de carrusel que gira de forma automatica
+                            o manual
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white"><i class="fas fa-compass"></i> -> Navegar</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="galeria-flexbox.html" class="text-white">
+                                    <i class="fas fa-camera"></i> Galeria
+                                </a>
+                            </li>
+                            <li>
+                                <a href="galeria-carrusel.html" class="text-white">
+                                    <i class="fas fa-image"></i> Carrusel
+                                </a>
+                            </li>
+                            <li>
+                                <a href="galeria-card.html" class="text-white">
+                                    <i class="fas fa-address-card"></i> Cards
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark">
+            <div class="container d-flex justify-content-between">
+                <a href="inicio.html" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
+                        viewBox="0 0 24 24" focusable="false">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                        <circle cx="12" cy="13" r="4" />
+                    </svg>
+                    <strong>Mi album de fotos ✈</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-chevron-circle-down"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1>¡Estas son mis fotos que giran como carrusel! 🎠</h1>
+                <p class="lead text-muted" style="font-style: italic;">
+                    "Oh gran pájaro del cielo
+                    que surca sin temor
+                    el mundo entero
+                    llevando pasajeros,
+                    ya sean sordos o ciegos.
+                    Tú, que estás en los cielos
+                    cruzando los Alpes sin miedo
+                    a una altura de terror
+                    que puede llevar así
+                    copilotos siniestros."
+                </p>
+            </div>
+        </section>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/img_15.jpg" class="d-block w-100" alt="imagen 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>FOCKE WULF FW 190 A</h5>
+                        <p>
+                            Probablemente el modelo más potente utilizado por la Luftwaffe y pronto se transformó en
+                            el terror de las flyng fortress estadounidenses.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/img_2.jpg" class="d-block w-100" alt="imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>P-51 Mustang</h5>
+                        <p>
+                            Este avión, modificado repetidamente durante el conflicto, se confirmó como uno de los
+                            mejores de todas las fuerzas aliadas.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/img_1.jpg" class="d-block w-100" alt="imagen 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>MITSUBISHI A6M ZERO</h5>
+                        <p>
+                            En las primeras fases del conflicto ningún avión americano disponía de la agilidad, de la
+                            potencia de fuego y de la autonomía del Zero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Ir arriba ↑</a>
+            </p>
+            <p style="font-style: italic;">
+                El segundo conflicto mundial marcó un antes y un después en la aviación. Si la primera guerra mundial
+                fue la primera gran contienda en la que los países involucrados estrenaron sus propias “fuerzas del
+                aire”, fue en la segunda cuando la aviación cumplió un papel fundamental. Episodios cruciales como Pearl
+                Harbour, los bombardeos que devastaron las principales ciudades europeas o bien la creación de una
+                cartografía moderna se deben en gran medida a los ases del aire. En una década se pasó de los antiguos
+                biplanos, herencia de la Gran Guerra, a los primeros cazas a reacción: la tecnología fue determinante y
+                cada país se esforzó para crear sus modelos estratégicos. Con tanta carne al fuego resulta incluso
+                difícil seleccionar 10 modelos, pues hubo al menos 10 modelos clave por país. Vamos a intentar recoger
+                algunos de los más emblemáticos.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="jquery/jquery.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
